@@ -14,14 +14,14 @@
 
 int	ft_ifnot(char *tab)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	if (!tab)
 		return (1);
 	while (tab[i] && tab[i] != '\n')
 		i++;
-	return (0 + (i == ft_strlen(tab)));
+	return (i == ft_strlen(tab));
 }
 
 char	*ft_strjoin(char *s1, char *s2)
