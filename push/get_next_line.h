@@ -18,7 +18,8 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-#include <stdint.h>
+# include <stdint.h>
+
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 300
 # endif
