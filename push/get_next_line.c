@@ -48,11 +48,11 @@ char	*ft_tr(char *store)
 	i = -1;
 	while (store[++i] && store[i] != '\n')
 		line[i] = store[i];
-    if(store[i] == '\n')
-    {
-      line[i] = '\n';
-      i++;
-    }
+	if(store[i] == '\n')
+	{
+		line[i] = '\n';
+		i++;
+	}
 	line[i] = '\0';
 	return (line);
 }
@@ -92,7 +92,7 @@ char	*get_next_line(int fd)
 		store = NULL;
 		return (NULL);
 	}
-    store = tmp;
+    	store = tmp;
 	line = ft_tr(store);
 	store = ft_after(store, line);
 	return (line);
