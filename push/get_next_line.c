@@ -46,7 +46,7 @@ char	*ft_tr(char *store)
 	if (!line)
 		return (NULL);
 	i = -1;
-	while (store[++i] && store[i - 1] != '\n')
+	while (store[++i] && store[i] != '\n')
 		line[i] = store[i];
     if(store[i] == '\n')
     {
